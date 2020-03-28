@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+        <!----STYLESHEETS GO HERE--->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <!--#######-->
+</head>
+<body>
+<div class="jumbotron mx-auto">
+    <h3>Javascript Tutorial Box</h3>
+    <hr>
+    <p id="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea est harum impedit incidunt ipsa libero maxime nisi
+        similique voluptate voluptatibus! Error laudantium magnam odio quos voluptatum. A labore praesentium rerum.</p>
+    <hr>
+    <div class="d-flex">
+        <input type="submit" class="btn btn-outline-danger mx-auto text-center" onclick="mrdelete()"  value="Delete">
+        <input type="submit" class="btn btn-outline-success mx-auto text-center" id="reveal" onclick="reveal_content()" value="Reveal Content" style="display: none">
+    </div>
+
+</div>
+</body>
+
+        <!-----SCRIPTS GO HERE---->
+<script src="bootstrap/js/jquery-3.4.0.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+
+        <!--JAVASCRIPT-->
+<script>
+    function mrdelete() {
+        //This button-function deletes content in the paragraph and rewrites "your own"!
+        document.getElementById('demo').innerHTML="You Just deleted this Content";
+        document.getElementById('reveal').style.display="block";
+    }
+    function reveal_content() {
+        //Re-types what was there
+        document.getElementById('demo').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea est harum impedit incidunt ipsa libero maxime nisi\n" +
+            "        similique voluptate voluptatibus! Error laudantium magnam odio quos voluptatum. A labore praesentium rerum.";
+        //This one hides the reveal button after it is clicked!
+        document.getElementById('reveal').style.display = "none";
+
+    }
+</script>
+        <!--#######--->
+</html>

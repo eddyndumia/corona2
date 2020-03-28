@@ -1,0 +1,12 @@
+<application>
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d3b67f81-c903-45f6-a6d2-f504acea4b80" name="Rota" url="http://localhost">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="60ec24c4-091c-4d5a-9159-56a5e62e74bf" name="corona" url="http://localhost">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+    </option>
+  </component>
+</application>
